@@ -1,2 +1,0 @@
-# GuardBot
-Global Guard 
