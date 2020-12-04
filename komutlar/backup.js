@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
         .setDescription(
           `Bu komutu özel mesajlarda kullanamazsın.
             
-            [Destek](https://discord.gg/WWhEu2f)`
+            [Destek](SoonSupportserver)`
         )
         .setColor("BLACK");
       if (message.channel.type === "dm")
@@ -85,8 +85,8 @@ module.exports.run = async (client, message, args) => {
             )
             .addField(
               "Kullanım",
-              `\`\`\`ig!yedek yükle ${id}\`\`\`
-\`\`\`ig!yedek bilgi ${id}\`\`\``
+              `\`\`\`g-yedek yükle ${id}\`\`\`
+\`\`\`g-yedek bilgi ${id}\`\`\``
             )
             .setColor("BLACK");
 
@@ -99,8 +99,8 @@ module.exports.run = async (client, message, args) => {
             )
             .addField(
               "Kullanım",
-              `\`\`\`ig!yedek yükle ${id}\`\`\`
-\`\`\`ig!yedek bilgi ${id}\`\`\``
+              `\`\`\`g-yedek yükle ${id}\`\`\`
+\`\`\`g-yedek bilgi ${id}\`\`\``
             )
             .setColor("BLACK");
 
@@ -114,7 +114,7 @@ module.exports.run = async (client, message, args) => {
           .setTitle(`${error} Hata!`)
           .setDescription(
             `Böyle bir id bulunamadı!
-[Destek](https://discord.gg/WWhEu2f)`
+[Destek](Soonsupportserver)`
           )
           .setColor("BLACK");
         if (!code) return message.channel.send(errorEmbed);
@@ -124,7 +124,7 @@ module.exports.run = async (client, message, args) => {
           .setTitle(`Böyle bir ${code} sunucu yedeği yok.`)
           .setDescription(
             `
-[Destek](https://discord.gg/WWhEu2f)`
+[Destek](Soon)`
           )
           .setColor("BLACK");
         if (!backups[message.author.id][code])
@@ -145,12 +145,12 @@ module.exports.run = async (client, message, args) => {
         let code = args[1];
         let errorEmbed = new RichEmbed().setTitle(`${error} Hata`)
           .setDescription(`Lütfen bir sunucu yedek **id**'si giriniz.
-[Destek](https://discord.gg/WWhEu2f)`);
+[Destek](Soon)`);
         if (!code) return message.channel.send(errorEmbed);
         let cantfindbackup = new RichEmbed()
           .setTitle(`${error}  Error`)
           .setTitle(`Böyle bir ${code} id yok!`)
-          .setDescription("[Destek](https://discord.gg/WWhEu2f)")
+          .setDescription("[Destek](Soon)")
           .setColor("BLACK");
         if (!backups[message.author.id][code])
           return message.channel.send(cantfindbackup);
@@ -213,7 +213,7 @@ module.exports.run = async (client, message, args) => {
           .setTitle(`${error} Hata`)
           .setDescription(
             `Lütfen bir yedeklenen sunucunun yedek **id**'si giriniz.   
-                    [Destek](https://discord.gg/WWhEu2f)`
+                    [Destek](Soon)`
           )
           .setColor("BLACK");
         if (!id) return message.channel.send(MissingbackupinfoEmbed);
@@ -222,7 +222,7 @@ module.exports.run = async (client, message, args) => {
           .setTitle(`${error} Hata!`)
           .setDescription(
             `Bu **id**'ye sahip bir yedeğin yok!'\`${id}\`.
-                "[Destek](https://discord.gg/WWhEu2f)`
+                "[Destek](Soon)`
           )
           .setColor("BLACK");
         if (!backups[message.author.id][id])
@@ -304,7 +304,7 @@ module.exports.run = async (client, message, args) => {
           .setTitle(`${error}  Error`)
           .setDescription(
             `Ne yazık ki yedekte hiç sunucun yok.
-[Destek](https://discord.gg/WWhEu2f)`
+[Destek](Soon)`
           )
           .setColor("BLACK");
         if (!backups[message.author.id])
@@ -345,7 +345,7 @@ ___Bu işlem geri alınamaz!__`);
       if (!args[0]) {
         const embed = new RichEmbed()
           .setTitle(
-            `**ig!yedek**
+            `**g-yedek**
 
 Sunucunun yedeğini al ve yükle
 
@@ -465,8 +465,8 @@ __**Komutlar**__
             )
             .addField(
               "Usage",
-              `\`\`\`ig!backup load ${id}\`\`\`
-\`\`\`ig!backup info ${id}\`\`\``
+              `\`\`\`g-backup load ${id}\`\`\`
+\`\`\`g-backup info ${id}\`\`\``
             )
             .setColor("BLACK");
 
@@ -479,8 +479,8 @@ __**Komutlar**__
             )
             .addField(
               "Usage",
-              `\`\`\`ig!backup load ${id}\`\`\`
-\`\`\`ig!backup info ${id}\`\`\``
+              `\`\`\`g-backup load ${id}\`\`\`
+\`\`\`g-backup info ${id}\`\`\``
             )
             .setColor("BLACK");
 
@@ -494,7 +494,7 @@ __**Komutlar**__
           .setTitle(`${error}  Error`)
           .setDescription(
             `You forgot to define the argument backup id. Use ig!help backup load for more information.
-[Support](https://discord.gg/WWhEu2f)`
+[Support](Soon)`
           )
           .setColor("BLACK");
         if (!code) return message.channel.send(errorEmbed);
@@ -504,7 +504,7 @@ __**Komutlar**__
           .setTitle(`You have no backup with the id ${code}.`)
           .setDescription(
             `
-[Support](https://discord.gg/WWhEu2f)`
+[Support](Soon)`
           )
           .setColor("BLACK");
         if (!backups[message.author.id][code])
@@ -530,7 +530,7 @@ __**Komutlar**__
         let cantfindbackup = new RichEmbed()
           .setTitle(`${error}  Error`)
           .setTitle(`You have no backup with the id ${code}.`)
-          .setDescription("[Support](https://discord.gg/WWhEu2f)")
+          .setDescription("[Support](Soon)")
           .setColor("BLACK");
         if (!backups[message.author.id][code])
           return message.channel.send(cantfindbackup);
@@ -592,8 +592,8 @@ __**Komutlar**__
         let MissingbackupinfoEmbed = new RichEmbed()
           .setTitle(`${error}  Error`)
           .setDescription(
-            `You forgot to define the argument **backup_id**. Use \`ig!help backup info\` for more information   
-                    [Support](https://discord.gg/WWhEu2f)`
+            `You forgot to define the argument **backup_id**. Use \`g-help backup info\` for more information   
+                    [Support](Soon)`
           )
           .setColor("BLACK");
         if (!id) return message.channel.send(MissingbackupinfoEmbed);
@@ -602,7 +602,7 @@ __**Komutlar**__
           .setTitle(`${error}  Error`)
           .setDescription(
             `You have **no backup** with the id \`${id}\`.
-                "[Support](https://discord.gg/WWhEu2f)`
+                "[Support](Soonf)`
           )
           .setColor("BLACK");
         if (!backups[message.author.id][id])
@@ -717,7 +717,7 @@ __This cannot be undone!__`);
       if (!args[0]) {
         const embed = new RichEmbed()
           .setTitle(
-            `**ig!backup**
+            `**g-backup**
 
 Create & load backups of your servers
 
