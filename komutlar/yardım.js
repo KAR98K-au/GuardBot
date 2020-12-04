@@ -10,32 +10,32 @@ module.exports.run = async (client, message, args) => {
   if (kontrol == "TR_tr") {
     const embed = new Discord.RichEmbed()
       .setDescription(
-        `Bot sürümü; **v1.0**, Prefix: **${prefix}**, Dil: **${kontrol}**`
+        `:shield:Bot sürümü; **v1.0**, Prefix: **${prefix}**, Dil: **${kontrol}**:shield:`
       )
       .addField(
-        `Bot`,
+        `:shield:Bot:shield:`,
         `\`yardım\`, \`dil\`, \`bot-bilgi\`, \`ayarlar\`, \`reboot\`, \`prefix\`, \`prefix-sıfırla\`,\`karaliste\`,\`beyazliste\``
       )
       .addField(
-        `Güvenlik Sistemi`,
+        `:shield:Güvenlik Sistemi:shield:`,
         `\`güvenlik\`, \`güvenlik-sıfırla\`, \`güvenlik-verilecek-rol\`, \`güvenlik-verilecek-rol-sıfırla\`, \`güvenlik-alınacak-rol\`, \`güvenlik-alınacak-rol-sıfırla\`, \`güvenlik-sahte-rol\`, \`güvenlik-sahte-rol-sıfırla\``
       )
       .addField(
-        `Ototag Sistemi`,
+        `:shield:Ototag Sistemi:shield:`,
         `\`ototag\`, \`ototag-sıfırla\`, \`ototag-isim\`, \`ototag-isim-sıfırla\``
       )
       .addField(
-        `Rol Koruma`,
+        `:shield:Rol Koruma:shield:`,
         `\`rol-koruma\`, \`rol-koruma-sıfırla\`, \`rol-koruma-rol\`, \`rol-koruma-rol-sıfırla\`, \`rol-limit\`, \`rol-limit-sıfırla\``
       )
-      .addField(`Kanal Koruma`, `\`kanal-koruma\`, \`kanal-koruma-sıfırla\``)
+      .addField(`:shield:Kanal Koruma:shield:`, `\`kanal-koruma\`, \`kanal-koruma-sıfırla\``)
 
       .addField(
-        `Ban Koruma`,
+        `:shield:Ban Koruma:shield:`,
         `\`ban-koruma\`, \`ban-koruma-sıfırla\`, \`ban-limit\`, \`ban-limit-rol\`, \`ban-limit-sıfırla\`, \`ban-limit-rol-sıfırla\``
       )
       .addField(
-        `Yedekleme`,
+        `:shield:Yedekleme:shield:`,
         `\`yedek\`, \`yedek al\`, \`yedek sil\`, \`yedek bilgi\`, \`yedek yükle\`, \`yedek temizle\``
       )
       .setColor("BLACK")
@@ -44,34 +44,34 @@ module.exports.run = async (client, message, args) => {
   } else {
     const embed = new Discord.RichEmbed()
       .setDescription(
-        `Bot Version; **v1.0**, Prefix: **${prefix}**, Language: **${kontrol}**)`
+        `:shield:Bot Version; **v1.0**, Prefix: **${prefix}**, Language: **${kontrol}**):shield:`
       )
       .addField(
-        `Bot`,
+        `:shield:Bot:shield:`,
         `\`help\`, \`language\`, \`bot-info\`, \`settings\`, \`reboot\`, \`prefix\`, \`prefix-reset\`,\`blacklist\`,\`whitelist\``
       )
       .addField(
-        `Security System`,
+        `:shield:Security System:shield:`,
         `\`security\`, \`security-reset\`, \`security-add-role\`, \`security-addd-role-reset\`, \`security-remove-role\`, \`security-add-role-reset\`, \`security-fake-role\`, \`security-fake-role-reset\``
       )
       .addField(
-        `Autotag System`,
+        `:shield:Autotag System:shield:`,
         `\`autotag\`, \`autotag-reset\`, \`autotag-name\`, \`autotag-name-reset\``
       )
       .addField(
-        `Role Protection`,
+        `:shield:Role Protection:shield:`,
         `\`role-protection\`, \`role-protection-reset\`, \`role-protection-role\`, \`role-protection-role-reset\`, \`role-limit\`, \`role-limit-reset\``
       )
       .addField(
-        `Channel Protection`,
+        `:shield:Channel Protection:shield:`,
         `\`channel-protection\`, \`channel-protection-reset\``
       )
       .addField(
-        `Ban Protection`,
+        `:shield:Ban Protection:shield:`,
         `\`ban-protection\`, \`ban-protection-reset\`, \`ban-limit\`, \`ban-limit-role\`, \`ban-limit-reset\`, \`ban-limit-role-reset\``
       )
       .addField(
-        `Backups`,
+        `:shield:Backups:shield:`,
         `\`backup\`, \`backup create\`, \`backup delete\`, \`backup info\`, \`backup load\`, \`backup purge\``
       )
       .setColor("BLACK")
