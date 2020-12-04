@@ -992,7 +992,15 @@ client.on('message', msg => {
   }
 });
 
-
+client.on('message', msg => {
+  
+    if (msg.content.toLowerCase() === 'vote') {
+    const eris = new Discord.RichEmbed()
+    .setAuthor(client.user.username, client.user.avatarURL)
+    .setDescription('[CLICK!](https://top.gg/bot/775488259966631947/vote)')
+    msg.channel.send(eris);
+  }
+});
 
 client.on('message', msg => {
   
