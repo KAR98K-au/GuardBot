@@ -460,9 +460,9 @@ client.on("message", async message => {
 });
 
 client.on("message", async message => {
-  let pref = (await db.fetch(`prefix_${message.guild.id}`)) || "c+";
+  let pref = (await db.fetch(`prefix_${message.guild.id}`)) || "g-";
   let dil = await db.fetch(`dil_${message.guild.id}`);
-  if (message.content === "c+") {
+  if (message.content === "g-") {
 
     if (dil == "TR_tr") {
       message.channel.send(
@@ -946,6 +946,62 @@ client.on("warn", e => {
 
 client.on("error", e => {
   console.log(chalk.bgRed(e.replace(regToken, "that was redacted")));
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'hi') {
+    msg.channel.send('**Hello Welcome dude**')
+    }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    msg.channel.send('**Aleyküm selam Hoşgeldin**')
+    }
+});
+client.on('message', msg => {
+  
+  if (msg.content.toLowerCase() === `prefix`) {
+   
+    msg.channel.send('**prefix:** `g-`')
+    
+  }
+});
+client.on('message', msg => {
+  
+    if (msg.content.toLowerCase() === 'invite') {
+    const eris = new Discord.RichEmbed()
+    .setAuthor(client.user.username, client.user.avatarURL)
+    .setDescription('[Click!](https://discord.com/oauth2/authorize?client_id=775488259966631947&scope=bot&permissions=1342169025)')
+    msg.channel.send(eris);
+  }
+});
+client.on('message', msg => {
+  
+  if (msg.content.toLowerCase() === `help`) {
+   
+    msg.channel.send('If you need help use the command **g-**`help` ')
+    
+  }
+});
+client.on('message', msg => {
+  
+  if (msg.content.toLowerCase() === `yardım`) {
+   
+    msg.channel.send('Yardıma ihtiyaçın var ise **g-**`yardım`adlı komutu kullan :)')
+    
+  }
+});
+
+
+
+client.on('message', msg => {
+  
+    if (msg.content.toLowerCase() === 'davet') {
+    const eris = new Discord.RichEmbed()
+    .setAuthor(client.user.username, client.user.avatarURL)
+    .setDescription('[TIKLA!](https://discord.com/oauth2/authorize?client_id=775488259966631947&scope=bot&permissions=1342169025)')
+    msg.channel.send(eris);
+  }
 });
 
 client.login(ayarlar.token);
