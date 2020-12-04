@@ -38,6 +38,10 @@ module.exports.run = async (client, message, args) => {
         `:shield:Yedekleme:shield:`,
         `\`yedek\`, \`yedek al\`, \`yedek sil\`, \`yedek bilgi\`, \`yedek yükle\`, \`yedek temizle\``
       )
+      .addField(
+        `:loudspeaker: Linkler :loudspeaker:`,
+        `[[DAVET!]](https://discord.com/oauth2/authorize?client_id=775488259966631947&scope=bot&permissions=1342169025)[[DESTEK!]](https://discord.gg/XEVpDNhxM3)[[OY]](https://top.gg/bot/775488259966631947/vote)`
+      )
       .setColor("BLACK")
       .setFooter(client.user.username, client.user.avatarURL);
     message.channel.send(embed);
@@ -73,6 +77,10 @@ module.exports.run = async (client, message, args) => {
       .addField(
         `:shield:Backups:shield:`,
         `\`backup\`, \`backup create\`, \`backup delete\`, \`backup info\`, \`backup load\`, \`backup purge\``
+      )
+      .addField(
+        `:loudspeaker: links :loudspeaker:`,
+        "[[INVITE!]](https://discord.com/oauth2/authorize?client_id=775488259966631947&scope=bot&permissions=1342169025)  [[SUPPORT!]](https://discord.gg/XEVpDNhxM3)[[VOTE]](https://top.gg/bot/775488259966631947/vote)"
       )
       .setColor("BLACK")
       .setFooter(client.user.username, client.user.avatarURL);
